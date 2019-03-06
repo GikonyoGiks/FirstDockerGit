@@ -19,7 +19,7 @@ sh "docker build -t test:version1 ."
 }
   
 stage('Docker login to hub and push the image'){
-sh "docker login -u 'gikonyogiks' -p 'L@ndrover2018'"
+sh "docker login -u 'gikonyogiks' -p 'L"ndrover2018'"
 sh "docker tag test:version1 gikonyogiks/firstdocker:version1"
 sh "docker push gikonyogiks/firstdocker:version1"
 }
